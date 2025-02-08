@@ -1,0 +1,47 @@
+2025-02-08 18:57:08 [main] INFO com.ui.listeners.TestListener Test Suite Stared 
+2025-02-08 18:57:08 [main] INFO com.ui.tests.LoginTest Load the HomePage of the website 
+2025-02-08 18:57:08 [main] INFO com.ui.pages.HomePage Launching Browser forCHROME 
+2025-02-08 18:57:09 [main] INFO com.ui.pages.HomePage Maximizing the broswe Window 
+2025-02-08 18:57:09 [main] INFO com.ui.pages.HomePage Visiting the websitehttps://www.automationpractice.pl 
+2025-02-08 18:57:11 [main] INFO com.ui.listeners.TestListener LoginCSVTest 
+2025-02-08 18:57:11 [main] INFO com.ui.listeners.TestListener Verify with the vaild user is able to login into the application 
+2025-02-08 18:57:11 [main] INFO com.ui.listeners.TestListener [Sanity, e2e] 
+2025-02-08 18:57:11 [main] WARN com.ui.listeners.TestListener LoginCSVTest SKIPPED 
+2025-02-08 18:57:11 [main] INFO com.ui.tests.LoginTest Load the HomePage of the website 
+2025-02-08 18:57:11 [main] INFO com.ui.pages.HomePage Launching Browser forCHROME 
+2025-02-08 18:57:12 [main] INFO com.ui.pages.HomePage Maximizing the broswe Window 
+2025-02-08 18:57:12 [main] INFO com.ui.pages.HomePage Visiting the websitehttps://www.automationpractice.pl 
+2025-02-08 18:57:12 [main] INFO com.ui.listeners.TestListener LoginCSVTest 
+2025-02-08 18:57:12 [main] INFO com.ui.listeners.TestListener Verify with the vaild user is able to login into the application 
+2025-02-08 18:57:12 [main] INFO com.ui.listeners.TestListener [Sanity, e2e] 
+2025-02-08 18:57:12 [main] WARN com.ui.listeners.TestListener LoginCSVTest SKIPPED 
+2025-02-08 18:57:12 [main] INFO com.ui.tests.LoginTest Load the HomePage of the website 
+2025-02-08 18:57:12 [main] INFO com.ui.pages.HomePage Launching Browser forCHROME 
+2025-02-08 18:57:13 [main] INFO com.ui.pages.HomePage Maximizing the broswe Window 
+2025-02-08 18:57:13 [main] INFO com.ui.pages.HomePage Visiting the websitehttps://www.automationpractice.pl 
+2025-02-08 18:57:14 [main] INFO com.ui.listeners.TestListener LoginCSVTest 
+2025-02-08 18:57:14 [main] INFO com.ui.listeners.TestListener Verify with the vaild user is able to login into the application 
+2025-02-08 18:57:14 [main] INFO com.ui.listeners.TestListener [Sanity, e2e] 
+2025-02-08 18:57:14 [main] WARN com.ui.listeners.TestListener LoginCSVTest SKIPPED 
+2025-02-08 18:57:14 [main] INFO com.ui.tests.LoginTest Load the HomePage of the website 
+2025-02-08 18:57:14 [main] INFO com.ui.pages.HomePage Launching Browser forCHROME 
+2025-02-08 18:57:15 [main] INFO com.ui.pages.HomePage Maximizing the broswe Window 
+2025-02-08 18:57:15 [main] INFO com.ui.pages.HomePage Visiting the websitehttps://www.automationpractice.pl 
+2025-02-08 18:57:15 [main] INFO com.ui.listeners.TestListener LoginCSVTest 
+2025-02-08 18:57:15 [main] INFO com.ui.listeners.TestListener Verify with the vaild user is able to login into the application 
+2025-02-08 18:57:15 [main] INFO com.ui.listeners.TestListener [Sanity, e2e] 
+2025-02-08 18:57:15 [main] ERROR com.ui.listeners.TestListener LoginCSVTest FAILED 
+2025-02-08 18:57:15 [main] ERROR com.ui.listeners.TestListener Cannot invoke "com.ui.pages.HomePage.goLoginPage()" because "this.homepage" is null 
+2025-02-08 18:57:15 [main] INFO com.ui.listeners.TestListener Capturing ScreenShort for the failed tests 
+2025-02-08 18:57:15 [main] ERROR com.ui.listeners.TestListener LoginCSVTest FAILED 
+2025-02-08 18:57:15 [main] ERROR com.ui.listeners.TestListener no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=132.0.6834.160)
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9c3c5231b8d7929f01c39d2ddb825df0, screenshot {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 132.0.6834.160, chrome: {chromedriverVersion: 132.0.6834.159 (2d77d3fc445..., userDataDir: C:\Users\karth\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56077}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56077/devtoo..., se:cdpVersion: 132.0.6834.160, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9c3c5231b8d7929f01c39d2ddb825df0 
+2025-02-08 18:57:15 [main] INFO com.ui.listeners.TestListener Capturing ScreenShort for the failed tests 
+2025-02-08 18:57:15 [main] INFO com.ui.listeners.TestListener Test Suite Completed 
