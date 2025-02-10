@@ -40,7 +40,7 @@ public class LoginDataProvider {
 	}
 	@DataProvider(name="LogintestCSVDataProvider")
 	public Iterator<Users> loginCSVDataProvider() {
-		return CSVReaderUtility.readCSVFile("loginData.csv");
+		return CSVReaderUtility.readCSVFile("LoginData.csv");
 		
 	}
 	@DataProvider(name="LoginTestExcelDataDataProvider")

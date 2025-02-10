@@ -40,15 +40,15 @@ public class TestListener implements ITestListener {
 		logger.error(result.getThrowable().getMessage());
 		ExtentReporterUtility.getTest().log(Status.FAIL, result.getMethod().getMethodName() + " " + "FAILED");
 		ExtentReporterUtility.getTest().log(Status.FAIL, result.getThrowable().getMessage());
-		//It will show the throwable messages in the ExtentReports as well.
-      Object testclass=  result.getInstance();
-    //It will return the instance of test base
-     BrowserUtility browserUtility= ((TestBase)testclass).getInstance();
-     logger.info("Capturing ScreenShort for the failed tests");
-    String screenshortPath= browserUtility.takeScreenShort(result.getMethod().getMethodName());
-    logger.info("Attaching the screenshort to the HTML File");
-    ExtentReporterUtility.getTest().addScreenCaptureFromPath(screenshortPath);
-     
+		// It will show the throwable messages in the ExtentReports as well.
+		Object testclass = result.getInstance();
+		// It will return the instance of test base
+		BrowserUtility browserUtility = ((TestBase) testclass).getInstance();
+		logger.info("Capturing ScreenShort for the failed tests");
+		String screenshortPath = browserUtility.takeScreenShort(result.getMethod().getMethodName());
+		logger.info("Attaching the screenshort to the HTML File");
+		ExtentReporterUtility.getTest().addScreenCaptureFromPath(screenshortPath);
+
 	}
 
 	public void onTestSkipped(ITestResult result) {

@@ -28,12 +28,12 @@ public abstract class BrowserUtility {
 	private static ThreadLocal<WebDriver> driver = new ThreadLocal<WebDriver>();
 
 	public WebDriver getDriver() {
-		return driver.get();
+		return driver.get();// used in myAccountLogin 
 	}
 
-//	public void setDriver(WebDriver driver) {
-//		this.driver = driver;
-//	}
+	public void setDriver(WebDriver driver) {
+		this.driver.set(driver);
+	}
 
 	public BrowserUtility(WebDriver driver) {// If we create more constructors then its the code is more elegent.
 		super();
@@ -61,8 +61,8 @@ public abstract class BrowserUtility {
 			if (isHeadless) {
 
 				ChromeOptions options = new ChromeOptions();
-				options.addArguments("--headless-old"); // headless
-				options.addArguments("--window-size=1920,1080");
+				options.addArguments("--headless"); // headless
+				//options.addArguments("--window-size=1920,1080");
 				driver.set(new ChromeDriver(options));
 			} else {
 				driver.set(new ChromeDriver());
