@@ -1,6 +1,5 @@
 /target/
+/logs/
+/null/
 /test-output/
 /screenshorts/
-/logs/
-/report.html/
-
