@@ -25,14 +25,14 @@ public class LoginDataProvider {
 		File testDataFile = new File(System.getProperty("user.dir") + "\\testdata\\loginData.json");
 		FileReader fileReader = new FileReader(testDataFile);
 
-		// testData is the reference of the java object
+		
 		TestData testData = gson.fromJson(fileReader, TestData.class);
 
-		//List is parent ----- ArrayList is child
+		
 		List<Object[]> dataToReturn = new ArrayList<Object[]>();
 		for (Users user : testData.getdata()) {
 
-			dataToReturn.add(new Object[] { user });// Adding data from zero th index
+			dataToReturn.add(new Object[] { user });
 
 		}
 		return dataToReturn.iterator();
