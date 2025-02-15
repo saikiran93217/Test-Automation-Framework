@@ -30,12 +30,19 @@ jobs:
        name: Test logs
        path: logs/
 
-    - name: Upload Test logs
+    - name: Upload Screenshorts as Artifacts 
       if: always()
       uses: actions/upload-artifact@v4.6.0
       with:
-          name: Test Reports
-          path: null/reportName/Index.html
+          name: screenshorts
+          path: screenshorts/
+          
+    - name: Upload HTML Report as Artifact 
+      if: always()
+      uses: actions/upload-artifact@v4.6.0
+      with:
+          name: html-report
+          path: null/reportName/report.html/      
 
     - name: Test Execution Status
       if: always()
@@ -46,7 +53,7 @@ jobs:
 
       run: |
          mkdir -p public/extent-reports/
-         cp -R report.html   public/null/reportName/extent-reports/
+         cp -R report.html   public/extent-reports/
          cp -R screenshorts/ public/extent-report/screenshorts/ 
          Is -1
 
@@ -55,7 +62,7 @@ jobs:
       uses: JamesIves/github-pages-deploy-action@v4
       with:
         folder: public/extent-reports/
-        token: ${{ secrets.PAT}}
+        token: ${{ secrets.PAT }}
         clean: true
       
       
