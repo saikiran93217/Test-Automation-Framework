@@ -46,7 +46,7 @@ jobs:
 
       run: |
          mkdir -p public/extent-reports/
-         cp -R report.html   public/extent-reports/
+         cp -R report.html   public/null/reportName/extent-reports/
          cp -R screenshorts/ public/extent-report/screenshorts/ 
          Is -1
 
