@@ -42,7 +42,7 @@ jobs:
       uses: actions/upload-artifact@v4.6.0
       with:
           name: html-report
-          path: null/reportName/report.html/      
+          path: report.html/      
 
     - name: Test Execution Status
       if: always()
