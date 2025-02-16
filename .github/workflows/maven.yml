@@ -52,9 +52,9 @@ jobs:
       if: always()
 
       run: |
-         mkdir -p public/extent-reports/
+         mkdir -p public/extent-reports
          cp -R report.html   public/extent-reports/
-         cp -R screenshorts/ public/extent-report/screenshorts/ 
+         cp -R screenshorts/ public/extent-reports/screenshorts/ 
          Is -1
 
     - name: Deploy
