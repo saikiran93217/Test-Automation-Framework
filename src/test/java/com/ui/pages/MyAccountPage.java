@@ -8,7 +8,7 @@ import com.utility.BrowserUtility;
 public class MyAccountPage extends BrowserUtility {
 	
 	//Child class can we always "Final keyword"
-	public static final By USER_NAME_LOCATOR = By.xpath("//a[@title=\"View my customer account\"]/span");
+	public static final By USER_NAME_LOCATOR = By.xpath("//a[@title='View my customer account']/span");
 
 	public MyAccountPage(WebDriver driver) {
 		super(driver);
