@@ -41,7 +41,7 @@ assertEquals(homepage.goLoginPage().dologinwith(user.getEmailAddress(), user.get
 	public void LoginExcelTest(Users user)  {
 		
 		assertEquals(homepage.goLoginPage().dologinwith(user.getEmailAddress(), user.getPassword()).getUserName(),
-				"Sai Kiran2");
+				"Sai Kiran");
 
 	}
 
