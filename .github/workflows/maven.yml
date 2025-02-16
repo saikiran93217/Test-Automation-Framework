@@ -55,7 +55,7 @@ jobs:
          mkdir -p public/extent-reports
          cp -R report.html   public/extent-reports/
          cp -R screenshorts/ public/extent-reports/screenshorts/ 
-         Is -1
+         Is -l
 
     - name: Deploy
       if: always()
