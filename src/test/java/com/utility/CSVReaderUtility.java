@@ -17,7 +17,7 @@ public class CSVReaderUtility {
 
 	public static Iterator<Users> readCSVFile(String fileName) {
 
-		File csvFile = new File(System.getProperty("user.dir") + "\\testdata//" +fileName);
+		File csvFile = new File(System.getProperty("user.dir") + "//testdata//" +fileName);
 		FileReader fileReader = null;
 		CSVReader csvReader;// it will skip the the column
 		String[] line;//it will give in string or String array
