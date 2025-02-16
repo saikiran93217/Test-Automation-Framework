@@ -21,37 +21,28 @@ public class LoginTest extends TestBase {
 	
 	@Test(description = "Verify with the vaild user is able to login into the application", groups = { "e2e",
 	"Sanity" }, dataProviderClass = com.ui.dataproviders.LoginDataProvider.class, dataProvider = "LogintestDataProvider", retryAnalyzer = com.ui.listeners.MyRetryAnalyzer.class)
-public void loginTest(Users user)  {// Instead providing lot of arguments we use class name(Users user) and we
-								// should have only 2 Arguments.
-// example: if we have email, address, pincode, ph, id,...... we need to add
-// arguments like(String email, String address.......)
+public void loginTest(Users user)  {
 
 assertEquals(homepage.goLoginPage().dologinwith(user.getEmailAddress(), user.getPassword()).getUserName(),
 		"Sai Kiran");
 
 }
-//	@Test(description = "Verify with the vaild user is able to login into the application", groups = { "e2e",
-//	"Sanity" }, dataProviderClass = com.ui.dataproviders.LoginDataProvider.class, dataProvider = "LogintestCSVDataProvider", retryAnalyzer = com.ui.listeners.MyRetryAnalyzer.class)
-//public void LoginCSVTest(Users user)  {// Instead providing lot of arguments we use class name(Users user) and we
-//								// should have only 2 Arguments.
-//// example: if we have email, address, pincode, ph, id,...... we need to add
-//// arguments like(String email, String address.......)
-//
-//assertEquals(homepage.goLoginPage().dologinwith(user.getEmailAddress(), user.getPassword()).getUserName(),
-//		"Sai Kiran");
-//
-//}
-//
-//	@Test(description = "Verify with the vaild user is able to login into the application", groups = { "e2e",
-//			"Sanity" }, dataProviderClass = com.ui.dataproviders.LoginDataProvider.class, dataProvider = "LoginTestExcelDataDataProvider", retryAnalyzer = com.ui.listeners.MyRetryAnalyzer.class)
-//	public void LoginExcelTest(Users user)  {// Instead providing lot of arguments we use class name(Users user) and we
-//										// should have only 2 Arguments.
-//		// example: if we have email, address, pincode, ph, id,...... we need to add
-//		// arguments like(String email, String address.......)
-//
-//		assertEquals(homepage.goLoginPage().dologinwith(user.getEmailAddress(), user.getPassword()).getUserName(),
-//				"Sai Kiran2");
-//
-//	}
+	@Test(description = "Verify with the vaild user is able to login into the application", groups = { "e2e",
+	"Sanity" }, dataProviderClass = com.ui.dataproviders.LoginDataProvider.class, dataProvider = "LogintestCSVDataProvider", retryAnalyzer = com.ui.listeners.MyRetryAnalyzer.class)
+public void LoginCSVTest(Users user)  {
+
+assertEquals(homepage.goLoginPage().dologinwith(user.getEmailAddress(), user.getPassword()).getUserName(),
+		"Sai Kiran");
+
+}
+
+	@Test(description = "Verify with the vaild user is able to login into the application", groups = { "e2e",
+			"Sanity" }, dataProviderClass = com.ui.dataproviders.LoginDataProvider.class, dataProvider = "LoginTestExcelDataDataProvider", retryAnalyzer = com.ui.listeners.MyRetryAnalyzer.class)
+	public void LoginExcelTest(Users user)  {
+		
+		assertEquals(homepage.goLoginPage().dologinwith(user.getEmailAddress(), user.getPassword()).getUserName(),
+				"Sai Kiran2");
+
+	}
 
 }
