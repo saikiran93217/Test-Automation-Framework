@@ -33,4 +33,5 @@ public class MyRetryAnalyzer implements IRetryAnalyzer {
 // If retry method returns true- go head re-run the failed test
 // If retry method returns false - testNG will mark the test as failed
 //We can run the with failed test case with retryanalayzer or in project we will find test-failed suite we can run it as well using jenkins.
+
 //1<=3(true),2<=3(true), 3<=3(true)4<=3(false) return false.
