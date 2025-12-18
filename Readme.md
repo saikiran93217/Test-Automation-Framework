@@ -36,7 +36,7 @@ A powerful, scalable UI automation framework with
 ✨ Jenkins pipelines
 ✨ REST API integration
 
-🔗 GitHub Repo: (Add your repo link here)
+🔗 GitHub Repo: https://github.com/saikiran93217/Test-Automation-Framework
 
 📊 Automation Areas I Work On
 
@@ -73,3 +73,4 @@ Learning Playwright for next-gen test automation
 ⭐ Support My Work
 
 If you like my frameworks or learning repositories, consider giving them a ⭐ on GitHub — it means a lot!
+
