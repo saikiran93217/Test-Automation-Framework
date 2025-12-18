@@ -54,15 +54,15 @@ CI/CD integration (Jenkins pipelines)
 
 Framework architecture and enhancement
 
-🏆 What I’m Currently Working On
+🏆 What I’m Currently Working On (DevOps Learning Focus)
 
-Designing a hybrid UI + API automation framework
+Learning Docker for containerizing applications and understanding image lifecycle, builds, and deployments
 
-Building Jenkins CI pipelines for integrated automation
+Exploring Kubernetes fundamentals, including pods, services, deployments, and basic cluster orchestration
 
-Improving test coverage and reducing manual regression effort
+Practicing Terraform for infrastructure provisioning and understanding Infrastructure as Code (IaC) concepts
 
-Learning Playwright for next-gen test automation
+Gaining exposure to Prometheus and Grafana for system monitoring, metrics collection, and dashboard visualizatio
 
 📫 Connect With Me
 
@@ -73,4 +73,5 @@ Learning Playwright for next-gen test automation
 ⭐ Support My Work
 
 If you like my frameworks or learning repositories, consider giving them a ⭐ on GitHub — it means a lot!
+
 
